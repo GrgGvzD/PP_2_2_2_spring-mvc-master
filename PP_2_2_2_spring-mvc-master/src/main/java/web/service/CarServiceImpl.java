@@ -11,8 +11,10 @@ import java.util.List;
 public class CarServiceImpl implements  CarService{
     @Autowired
     private CarDAO carDAO;
+
+
     @Override
-    public List<Car> getCarsList(int amountOfCars) {
-        return carDAO.getCarsList(amountOfCars);
+    public List<Car> getCarsList(int amount) {
+        return carDAO.getCarsList(amount);
     }
 }

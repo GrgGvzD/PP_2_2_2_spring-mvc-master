@@ -6,18 +6,18 @@ import org.springframework.stereotype.Component;
 
 @Data
 @NoArgsConstructor
-@Component
+//@Component
 public class Car {
 
     private String model;
 
     private int enginePower;
 
-    private int groundClearance;
+    private int price;
 
-    public Car(String model, int enginePower, int groundClearance) {
+    public Car(String model, int enginePower, int price) {
         this.model = model;
         this.enginePower = enginePower;
-        this.groundClearance = groundClearance;
+        this.price = price;
     }
 }
